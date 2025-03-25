@@ -1,6 +1,9 @@
+using IdentityService.Infrastructure.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 namespace IdentityService.Infrastructure.Persistence;
 
-public class AppDbContext
+public class AppDbContext : IdentityDbContext<ApplicationUser>
 {
 
 }
